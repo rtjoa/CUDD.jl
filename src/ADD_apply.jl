@@ -50,6 +50,6 @@ end
 
 function __init__()
     for (func, ref) in add_apply_func_ptr_refs
-        ref[] = @cfunction($func, Ptr{Node}, (Ptr{Manager}, Ptr{Ptr{Node}}, Ptr{Ptr{Node}}))
+        # ref[] = @cfunction($func, Ptr{Node}, (Ptr{Manager}, Ptr{Ptr{Node}}, Ptr{Ptr{Node}}))
     end
 end
